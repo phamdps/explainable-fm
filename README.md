@@ -56,7 +56,7 @@ A core innovation of this framework is the seamless synergy between **Time Serie
 
 ---
 
-## Architecture & Use-Case Description
+## 💡Architecture & Use-Case Description
 
 This visualization illustrates a core use case of explainability within an autonomous cognitive transportation digital twin. As the system integrates multi-sensor inputs and real-time time-series telemetry into a multimodal foundation model core, the architecture surfaces transparent attribution maps and attention weights. Rather than operating as a black box, the model translates complex trajectory forecasts and spatial features into clear, auditable decision paths. This enables the multimodal large language model (MLLM) to generate precise natural language justifications—such as explaining why a vehicle autonomously adjusted its speed due to a predicted pedestrian crossing and a temporal congestion spike—ensuring safety, interpretability, and human-aligned trust in smart city environments.
 
