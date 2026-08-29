@@ -138,6 +138,31 @@ If you use this framework or code in your research, please cite our work:
 
 ---
 
+# 📚 References (2025–2026)
+
+This project builds upon recent milestones in time-series foundation architectures, cross-modal reasoning, and transparent digital twin frameworks. The literature is categorized below by core technical pillars:
+
+### 1. Explainability & Concept Interpretability in Time Series Foundation Models
+* **COFT (ICLR 2026):** *Adapting and Explaining Time Series Foundation Models via Concept Banks.* Introduces concept-based explainability and Concept Activation Vectors (CAVs) using shapelet-based transformations to audit models like Amazon Chronos and MOMENT.
+* **Temporal Concept Probing & Attribution Layers (2025–2026):** Methodologies shifting away from black-box post-hoc explainers (such as vanilla SHAP/LIME) toward native attention-map extraction and token-level activation auditing for temporal transformers.
+
+### 2. State-of-the-Art Time Series Foundation Models (TSFMs)
+* **Amazon Chronos-2 (2025/2026):** T5-based encoder-decoder probabilistic foundation models scaling quantization-based tokenization to treat multi-variate and covariate-informed forecasting as a language modeling task.
+* **Salesforce MOIRAI-2 (2025/2026):** Universal decoder-only forecasting architecture utilizing *Any-Variate Attention* to handle dynamic data frequencies and multi-variable structures without fixed input dimensions.
+* **Google TimesFM 2.0 (2025/2026):** Patched-decoder foundation models engineered for high long-horizon point accuracy and enterprise reliability.
+* **MOMENT (CMU, 2024–2025):** Open-access multi-task foundation models supporting cross-domain forecasting, classification, anomaly detection, and data imputation.
+
+### 3. Multimodal Large Language Models (MLLMs) & Vision-Language Reasoning
+* **Qwen2.5-VL & Molmo (2025/2026):** Leading open-weight MLLMs featuring point-level visual grounding, high-information-density processing, and spatial pixel localization critical for edge-agent perception.
+* **Time-LLM (2025):** *Time Series Forecasting by Reprogramming Large Language Models.* Establishes the cross-modal bridge paradigm by projecting time-series patches into text-space prototypes to tap into frozen LLM reasoning capabilities.
+* **Janus-Pro & GLM-4.6V (2025/2026):** Advanced multimodal architectures handling long-context multi-document data, complex visual feeds, and high-frequency sensor telemetry concurrently.
+
+### 4. Intelligent Transportation Systems & LLM-Augmented Digital Twins (DT-LLMs)
+* **LLM-Augmented Semantic Digital Twins (LSDTs) (2026):** Frameworks merging real-time IoT/telemetry data streams with LLM-driven semantic knowledge graphs to convert unstructured regulatory and spatial rules into executable constraints.
+* **Closed-Loop DT-LLM Integration Studies (2025–2026):** Architectures examining real-time data feedback loops where physical multi-sensor tracking updates guide multi-agent planning, trajectory execution, and safety validations in autonomous networks.
+
+---
+
 ## 📜 License
 
 Distributed under the [MIT License](https://www.google.com/search?q=LICENSE).
