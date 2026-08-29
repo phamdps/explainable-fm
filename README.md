@@ -5,11 +5,36 @@
 </div>
 
 
-<p align="center">
-  <img src="assets/explainable.gif" alt="Explainable Autonomous Cognitive Transportation Digital Twin" width="800"/>
-</p>
+Injecting explainability directly into the architecture of large-scale foundation models is one of the most active areas of modern AI research. Because foundation models (like Time Series Foundation and Multimodal Large Language Models) rely on billions of parameters and complex latent spaces, achieving transparency requires architectural modifications or tightly integrated sub-modules.
 
-> *A next-generation digital twin framework bridging real-time traffic simulation, **Explainable Time Series Foundation Models**, and **Multimodal Large Language Models (MLLMs)** for transparent, human-aligned autonomous systems.*
+The primary architectural strategies used to build explainability into foundation models include:
+
+### 1. Attention Mechanism Inspection & Native Attributions
+
+* **How it works:** Foundation models predominantly rely on Transformer architectures governed by self-attention mechanisms. By designing the architecture to expose raw attention weights or incorporating native attribution layers (such as Integrated Gradients or Layer-wise Relevance Propagation), developers can trace *which* input tokens or regions the model focused on to generate an output.
+* **Application:** In time-series or multimodal settings, this allows you to see precisely which historical timestamps or visual cues triggered a specific decision.
+
+### 2. Concept Bottleneck Architectures
+
+* **How it works:** Instead of forcing the model to map raw inputs (like pixels or raw telemetry streams) directly to a final output in a single black-box leap, a bottleneck layer forces the network to intermediate through human-understandable concepts (e.g., "high traffic density," "pedestrian crossing," or "abnormal deceleration").
+* **Application:** The model computes intermediate semantic scores, which are both inspectable by humans and passed along to drive the final decision logic.
+
+### 3. Cross-Modal Bridges & Structured Token Injection
+
+* **How it works:** For multimodal and multi-model systems, explainability can be engineered into the **bridge architecture** connecting distinct foundation models.
+* **Application:** As explored in your digital twin architecture, raw numerical outputs, confidence intervals, and feature attributions from a time series foundation model can be structured into explicit contextual text tokens and fed directly into a Multimodal Large Language Model (MLLM). This enables the MLLM to "reason" over quantitative metrics and output natural language explanations natively.
+
+### 4. Probing Classifiers & Latent Space Auditing
+
+* **How it works:** Building modular probe networks alongside the core foundation layers. These lightweight auxiliary classifiers monitor specific activation layers during runtime to decode what internal representations (like velocity patterns or object clusters) the model is currently prioritizing.
+
+---
+
+## 🔍 Explainability Architecture & Visual Breakdown
+
+<p align="center">
+  <img src="assets/explainability.gif" alt="Explainable Multimodal Foundation Model Architecture" width="800"/>
+</p>
 
 ---
 
@@ -28,6 +53,18 @@ A core innovation of this framework is the seamless synergy between **Time Serie
 - **Explainable Time Series Foundation Models:** Leverage pre-trained temporal transformers to capture long-range dependencies, complex traffic flow dynamics, and anomalies with native feature attribution maps[cite: 2].
 - **Cognitive Digital Twin Engine:** Simulates complex urban and highway driving ecosystems in real time, synchronizing physical telemetry with virtual environment states[cite: 2].
 - **Explainable AI (XAI) Layers:** Translates deep latent representations into human-interpretable metrics, attention heatmaps, and confidence scores[cite: 2].
+
+---
+
+## Architecture & Use-Case Description
+
+This visualization illustrates a core use case of explainability within an autonomous cognitive transportation digital twin. As the system integrates multi-sensor inputs and real-time time-series telemetry into a multimodal foundation model core, the architecture surfaces transparent attribution maps and attention weights. Rather than operating as a black box, the model translates complex trajectory forecasts and spatial features into clear, auditable decision paths. This enables the multimodal large language model (MLLM) to generate precise natural language justifications—such as explaining why a vehicle autonomously adjusted its speed due to a predicted pedestrian crossing and a temporal congestion spike—ensuring safety, interpretability, and human-aligned trust in smart city environments.
+
+<p align="center">
+  <img src="assets/explainable.gif" alt="Explainable Autonomous Cognitive Transportation Digital Twin" width="800"/>
+</p>
+
+> *A next-generation digital twin framework bridging real-time traffic simulation, **Explainable Time Series Foundation Models**, and **Multimodal Large Language Models (MLLMs)** for transparent, human-aligned autonomous systems.*
 
 ---
 
