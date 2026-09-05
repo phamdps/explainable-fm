@@ -75,8 +75,7 @@ This visualization illustrates a core use case of explainability within an auton
 
 # 🧠 Typical Foundation Architectures & Visualizations
 
-To achieve glass-box transparency in autonomous cyber-physical systems, our pipeline evaluates two fundamental architectures: TimesFM for high-frequency temporal forecasting and anomaly extraction, and Qwen2-VL for multi-camera spatial grounding and natural language reasoning. For other architectures, these techniques can be extended and applied following the exact same principles.
-
+To achieve glass-box transparency for foundation and multimodal models, our preparation works evaluate two fundamental architectures: TimesFM for high-frequency temporal forecasting and anomaly extraction, and Qwen2-VL for multi-camera spatial grounding and natural language reasoning. For other architectures, these techniques can be extended and applied following the exact same principles.
 
 ---
 
