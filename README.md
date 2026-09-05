@@ -90,10 +90,6 @@ TimesFM utilizes a decoder-only patched-transformer architecture designed for ze
 * **Causal Transformer Decoder Stack:** Captures long-range temporal dependencies across varying sampling rates using stacked causal attention layers.
 * **Multi-Step Output Head:** Generates point forecasts and confidence intervals serialized into structured token streams for downstream reasoning.
 
-<p align="center">
-  <img src="assets/timesfm_architecture.png" alt="TimesFM Full Architecture Diagram" width="850"/>
-</p>
-
 > 🔍 **Interactive Exploration:** Want to inspect the layer-by-layer computation graph? You can explore the fully interactive version here:  
 > 👉 [View Interactive TimesFM Architecture Graph](https://phamdps.github.io/explainable-fm/timesfm_architecture.html)
 
@@ -108,10 +104,6 @@ Qwen2-VL provides native dynamic resolution support and multimodal positioning, 
 * **Vision Transformer (ViT) Backbone:** Encodes multi-camera spatial layouts and raw pixel data from autonomous vehicle feeds.
 * **Dynamic Resolution Projector:** Maps variable aspect ratios directly into the unified latent space without losing fine-grained spatial cues.
 * **Unified Cross-Modal Decoder Stack:** Interleaves visual token representations with time-series tokens injected from TimesFM, allowing the language backbone to execute Chain-of-Thought (CoT) reasoning.
-
-<p align="center">
-  <img src="assets/qwen2_vl_architecture.png" alt="Qwen2-VL Full Architecture Diagram" width="850"/>
-</p>
 
 > 🔍 **Interactive Exploration:** Want to trace the vision-to-text fusion layers? You can explore the live graph version here:  
 > 👉 [View Interactive Qwen2-VL Architecture Graph](https://phamdps.github.io/explainable-fm/qwen2_vl_architecture.html)
