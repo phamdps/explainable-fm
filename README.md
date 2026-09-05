@@ -30,7 +30,7 @@ The primary architectural strategies used to build explainability into foundatio
 
 ---
 
-## 🔍 Explainability Architecture & Visual Breakdown
+## 🔍 Explainability: Architecture & Visual Breakdown
 
 <p align="center">
   <img src="assets/explainability.gif" alt="Explainable Multimodal Foundation Model Architecture" width="800"/>
@@ -44,8 +44,6 @@ As autonomous driving and smart city infrastructures scale, traditional "black-b
 
 A core innovation of this framework is the seamless synergy between **Time Series Foundation Models** and **Multimodal Large Language Models (MLLMs)**: the predictive and anomaly-detection outputs of the time series foundation models are directly fed into the MLLMs as structured contextual tokens[cite: 2]. This empowers the MLLM to perform advanced semantic reasoning, contextualize temporal trends with visual and textual cues, and output natural language justifications for every driving decision[cite: 2].
 
----
-
 ## ⚙️ Core Architecture & Technologies
 
 - **Time-Series-to-MLLM Bridge:** Numerical outputs, confidence scores, and feature attributions from time series foundation models are formatted and injected into MLLMs, allowing language models to "reason" over temporal traffic trajectories and anomalies[cite: 2].
@@ -53,8 +51,6 @@ A core innovation of this framework is the seamless synergy between **Time Serie
 - **Explainable Time Series Foundation Models:** Leverage pre-trained temporal transformers to capture long-range dependencies, complex traffic flow dynamics, and anomalies with native feature attribution maps[cite: 2].
 - **Cognitive Digital Twin Engine:** Simulates complex urban and highway driving ecosystems in real time, synchronizing physical telemetry with virtual environment states[cite: 2].
 - **Explainable AI (XAI) Layers:** Translates deep latent representations into human-interpretable metrics, attention heatmaps, and confidence scores[cite: 2].
-
----
 
 ## 💡Architecture & Use-Case Description
 
@@ -77,6 +73,51 @@ This visualization illustrates a core use case of explainability within an auton
 
 ---
 
+# 🧠 Typical Foundation Architectures & Visualizations
+
+To achieve glass-box transparency in autonomous cyber-physical systems, our pipeline evaluates two fundamental architectures: TimesFM for high-frequency temporal forecasting and anomaly extraction, and Qwen2-VL for multi-camera spatial grounding and natural language reasoning. For other architectures, these techniques can be extended and applied following the exact same principles.
+
+
+---
+
+### 📈 1. TimesFM (Time-Series Foundation Model) Architecture
+
+#### Architectural Mechanics
+
+TimesFM utilizes a decoder-only patched-transformer architecture designed for zero-shot time series forecasting. Instead of processing individual timestamps sequentially, it groups contiguous sections of time-series telemetry into non-overlapping patches.
+
+* **Input Patching & Frequency Conditioning:** Converts continuous telemetry streams into fixed-size vector embeddings while injecting frequency indicators.
+* **Causal Transformer Decoder Stack:** Captures long-range temporal dependencies across varying sampling rates using stacked causal attention layers.
+* **Multi-Step Output Head:** Generates point forecasts and confidence intervals serialized into structured token streams for downstream reasoning.
+
+<p align="center">
+  <img src="assets/timesfm_architecture.png" alt="TimesFM Full Architecture Diagram" width="850"/>
+</p>
+
+> 🔍 **Interactive Exploration:** Want to inspect the layer-by-layer computation graph? You can explore the fully interactive version here:  
+> 👉 [View Interactive TimesFM Architecture Graph](https://phamdps.github.io/explainable-fm/timesfm_architecture.html)
+
+---
+
+### 👁️ 2. Qwen2-VL (Multimodal Foundation Model) Architecture
+
+#### Architectural Mechanics
+
+Qwen2-VL provides native dynamic resolution support and multimodal positioning, enabling it to process variable-length video frames and image feeds alongside text tokens seamlessly.
+
+* **Vision Transformer (ViT) Backbone:** Encodes multi-camera spatial layouts and raw pixel data from autonomous vehicle feeds.
+* **Dynamic Resolution Projector:** Maps variable aspect ratios directly into the unified latent space without losing fine-grained spatial cues.
+* **Unified Cross-Modal Decoder Stack:** Interleaves visual token representations with time-series tokens injected from TimesFM, allowing the language backbone to execute Chain-of-Thought (CoT) reasoning.
+
+<p align="center">
+  <img src="assets/qwen2_vl_architecture.png" alt="Qwen2-VL Full Architecture Diagram" width="850"/>
+</p>
+
+> 🔍 **Interactive Exploration:** Want to trace the vision-to-text fusion layers? You can explore the live graph version here:  
+> 👉 [View Interactive Qwen2-VL Architecture Graph](https://phamdps.github.io/explainable-fm/qwen2_vl_architecture.html)
+
+---
+
 ## 📂 Repository Structure
 
 ```text
@@ -91,7 +132,6 @@ This visualization illustrates a core use case of explainability within an auton
 └── README.md
 
 ```
-
 ---
 
 ## 🛠️ Quick Start
@@ -123,6 +163,7 @@ python scripts/run_simulation.py --config configs/default_twin.yaml
 
 ---
 
+
 ## 📄 Citation
 
 If you use this framework or code in your research, please cite our work:
@@ -135,8 +176,6 @@ If you use this framework or code in your research, please cite our work:
 }
 
 ```
-
----
 
 # 📚 References (2025–2026)
 
