@@ -216,8 +216,6 @@ This project builds upon recent milestones in time-series foundation architectur
   *Uses controlled text/image corruption to causally investigate attention heads and multimodal processing in BLIP and LLaVA.*
 * **[Mechanistic Interpretability Meets Vision Language Models: Insights and Limitations](https://iclr.cc/virtual/2025/poster/31330)** (Liu, Zhang & Yeung-Levy, 2025)  
   *Comprehensive field overview reviewing probing, activation patching, logit lens, SAEs, and automated explanations.*
-* **[Towards Explainable and Interpretable Multimodal Large Language Models: A Comprehensive Survey](https://arxiv.org/abs/2412.02104)** (Dang et al., 2024)  
-  *Provides a holistic taxonomy categorizing MLLM interpretability across data, architecture, and inference perspectives.*
 
 ### 6. Explanation Faithfulness & Computation
 * **[Revising and Falsifying Sparse Autoencoder Feature Explanations](https://openreview.net/forum?id=OJAW2mHVND)** (Ma, Pfrommer & Sojoudi, NeurIPS 2025)  
