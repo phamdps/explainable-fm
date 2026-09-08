@@ -36,6 +36,17 @@ The primary architectural strategies used to build explainability into foundatio
   <img src="assets/explainability.gif" alt="Explainable Multimodal Foundation Model Architecture" width="800"/>
 </p>
 
+This taxonomy categorizes mechanistic and behavioral interpretability techniques across six levels of abstraction—ranging from surface-level input attributions to deep internal circuit interventions. It highlights the core research question each method addresses and evaluates its capacity for establishing true causal relationships within neural network representations.
+
+| Level | Technique family | Main question | Causal? |
+|---|---|---|---|
+| 1 | Input attribution | Which input parts mattered? | Usually weakly |
+| 2 | Concept / representation analysis | What does the model represent? | Usually no |
+| 3 | Behavioral / probing methods | What information is recoverable? | No |
+| 4 | Circuit / causal intervention | Which internal components cause the output? | Yes |
+| 5 | Feature discovery | What latent features are implemented? | Partly |
+| 6 | Model-generated explanations | What does the model say its reason was? | Usually no |
+
 ---
 
 ## 🌟 Overview
