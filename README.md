@@ -228,8 +228,8 @@ This project builds upon recent milestones in time-series foundation architectur
 ### 7. Recent Frontiers (2026)
 * **[Mechanist: AI as a Scientific Instrument for Discovering the Mechanisms of Intelligence](https://arxiv.org/abs/2608.12036)** (Wang et al., 2026)  
   *Autonomous system for formulating and testing mechanistic hypotheses via 32 intervention and validation tools.*
-* **[From Interpretability to Control: Insights from Six Years of the TrustNLP Workshop](https://arxiv.org/abs/2608.11892)** (Gupta et al., 2026)  
-  *Overview on shifting from post-hoc explanations toward active control of generative systems.*
+* **[From Interpretability to Control: Insights from Six Years of the TrustNLP Workshop](https://arxiv.org/abs/2608.11171)** (Gupta et al., August 2026)  
+  *Overview on shifting from post-hoc explanations toward active control of generative systems.* 
 * **[MURANO: Design, Run, and Reproduce Mechanistic Interpretability Experiments as Composable Pipelines](https://arxiv.org/abs/2608.30662)** (Makou et al., 2026)  
   *Framework for building composable pipelines for recording, attribution, and causal intervention.*
 
