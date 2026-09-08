@@ -183,6 +183,9 @@ If you use this framework or code in your research, please cite our work:
 
 This project builds upon recent milestones in time-series foundation architectures, cross-modal reasoning, large language model traffic adaptation, and transparent digital twin frameworks. The literature is categorized below by core technical pillars:
 
+* **[Towards Explainable and Interpretable Multimodal Large Language Models: A Comprehensive Survey](https://arxiv.org/abs/2412.02104)** (Dang et al., 2024)  
+  *Provides a holistic survey taxonomy categorizing MLLM interpretability across data, architecture, and training/inference perspectives.*
+
 ### 1. Explainable Traffic Forecasting, Driving Behavior & LLMs for Transportation
 * **LC-LLM (Peng et al., Communications in Transportation Research, 2025):** *LC-LLM: Explainable Lane-Change Intention and Trajectory Predictions with Large Language Models.* Reformulates vehicle trajectory and lane-change intent forecasting as a language modeling problem, applying supervised fine-tuning and transparent Chain-of-Thought (CoT) step-by-step reasoning.
 * **xTP-LLM (Communications in Transportation Research, 2024):** *Towards Explainable Traffic Flow Prediction with Large Language Models.* Integrates multi-modal spatial-temporal data (Points of Interest, weather, historical logs) with Chain-of-Thought reasoning to generate accurate, interpretable traffic volume forecasts.
@@ -203,6 +206,52 @@ This project builds upon recent milestones in time-series foundation architectur
 * **Qwen2.5-VL & Molmo (2025/2026):** Leading open-weight MLLMs featuring point-level visual grounding, high-information-density processing, and spatial pixel localization critical for edge-agent perception.
 * **Time-LLM (2025):** *Time Series Forecasting by Reprogramming Large Language Models.* Establishes the cross-modal bridge paradigm by projecting time-series patches into text-space prototypes to tap into frozen LLM reasoning capabilities.
 * **Janus-Pro & GLM-4.6V (2025/2026):** Advanced multimodal architectures handling long-context multi-document data, complex visual feeds, and high-frequency sensor telemetry concurrently.
+
+### 5. Multimodal Mechanistic Interpretability
+* **[When Structured Sparse Autoencoders Learn Consistent Concepts Across Modalities](https://arxiv.org/abs/2607.08605)** (Liao, Yang & Wei, 2026)  
+  *Studies whether SAE features represent consistent concepts across vision and language, evaluating on Qwen2.5-VL-7B-Instruct.*
+* **[SAE-V: Interpreting Multimodal Models for Enhanced Alignment](https://openreview.net/forum?id=S4HPn5Bo6k)** (Lou et al., ICML 2025)  
+  *Extends sparse-autoencoder interpretability to MLLMs to study cross-modal representations and alignment.*
+* **[What Do VLMs NOTICE? A Mechanistic Interpretability Pipeline for Gaussian-Noise-free Text-Image Corruption and Evaluation](https://aclanthology.org/2025.naacl-long.571/)** (Golovanevsky et al., NAACL 2025)  
+  *Uses controlled text/image corruption to causally investigate attention heads and multimodal processing in BLIP and LLaVA.*
+* **[Mechanistic Interpretability Meets Vision Language Models: Insights and Limitations](https://iclr.cc/virtual/2025/poster/31330)** (Liu, Zhang & Yeung-Levy, 2025)  
+  *Comprehensive field overview reviewing probing, activation patching, logit lens, SAEs, and automated explanations.*
+* **[Towards Explainable and Interpretable Multimodal Large Language Models: A Comprehensive Survey](https://arxiv.org/abs/2412.02104)** (Dang et al., 2024)  
+  *Provides a holistic taxonomy categorizing MLLM interpretability across data, architecture, and inference perspectives.*
+
+### 6. Explanation Faithfulness & Computation
+* **[Revising and Falsifying Sparse Autoencoder Feature Explanations](https://openreview.net/forum?id=OJAW2mHVND)** (Ma, Pfrommer & Sojoudi, NeurIPS 2025)  
+  *Investigates polysemanticity and methods for falsifying auto-generated feature explanations.*
+* **[Route Sparse Autoencoder to Interpret Large Language Models](https://aclanthology.org/2025.emnlp-main.346/)** (Shi et al., EMNLP 2025)  
+  *Tracks SAE feature transformations across multiple layers.*
+* **[On the Biology of a Large Language Model / Attribution Graphs](https://transformer-circuits.pub/2024/attribution-graphs/index.html)** (Anthropic, 2025)  
+  *Focuses on moving from isolated features to reconstructing multi-step causal computation circuits.*
+
+### 7. Recent Frontiers (2026)
+* **[Mechanist: AI as a Scientific Instrument for Discovering the Mechanisms of Intelligence](https://arxiv.org/abs/2608.12036)** (Wang et al., 2026)  
+  *Autonomous system for formulating and testing mechanistic hypotheses via 32 intervention and validation tools.*
+* **[From Interpretability to Control: Insights from Six Years of the TrustNLP Workshop](https://arxiv.org/abs/2608.11892)** (Gupta et al., 2026)  
+  *Overview on shifting from post-hoc explanations toward active control of generative systems.*
+* **[MURANO: Design, Run, and Reproduce Mechanistic Interpretability Experiments as Composable Pipelines](https://arxiv.org/abs/2608.30662)** (Makou et al., 2026)  
+  *Framework for building composable pipelines for recording, attribution, and causal intervention.*
+
+---
+
+### Recommendation Reading List
+
+| Paper | Focus Area | Venue / Year | Core Contribution |
+|---|---|---|---|
+| **[Mechanistic Interpretability Meets VLMs](https://iclr.cc/virtual/2025/poster/31330)** | Field Map | ICLR Blog 2025 | Survey of probing, patching, logit lens, and SAEs in MLLMs |
+| **[SAE-V](https://openreview.net/forum?id=S4HPn5Bo6k)** | Multimodal SAE | ICML 2025 | Extends sparse autoencoders to multimodal alignment |
+| **[What Do VLMs NOTICE?](https://aclanthology.org/2025.naacl-long.571/)** | Causal Intervention | NAACL 2025 | Text-image corruption pipeline for BLIP and LLaVA |
+| **[Structured SAEs Across Modalities](https://arxiv.org/abs/2607.08605)** | Cross-Modal Concepts | arXiv 2026 | Evaluates cross-modal concept consistency in Qwen2.5-VL |
+| **[Explainable & Interpretable MLLMs Survey](https://arxiv.org/abs/2412.02104)** | Multimodal Survey | arXiv 2024 | Categorizes MLLM explainability across data, architecture, and inference |
+| **[Falsifying SAE Feature Explanations](https://openreview.net/forum?id=OJAW2mHVND)** | Explanation Faithfulness | NeurIPS 2025 | Methods to test and falsify automated feature explanations |
+| **[Route Sparse Autoencoders](https://aclanthology.org/2025.emnlp-main.346/)** | Feature Tracking | EMNLP 2025 | Multi-layer feature movement analysis |
+| **[Attribution Graphs](https://transformer-circuits.pub/2024/attribution-graphs/index.html)** | Causal Circuits | Anthropic 2025 | Reconstructing multi-step internal computations |
+| **[Mechanist](https://arxiv.org/abs/2608.12036)** | Automated Discovery | arXiv 2026 | AI framework for autonomous mechanistic hypothesis testing |
+| **[From Interpretability to Control](https://arxiv.org/abs/2608.11892)** | Survey / Alignment | arXiv 2026 | Evolution from post-hoc analysis to direct model control |
+| **[MURANO](https://arxiv.org/abs/2608.30662)** | Experimental Tooling | arXiv 2026 | Pipeline framework for reproducible interpretability workflows |
 
 ---
 
