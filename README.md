@@ -248,7 +248,7 @@ This project builds upon recent milestones in time-series foundation architectur
 | **[Route Sparse Autoencoders](https://aclanthology.org/2025.emnlp-main.346/)** | Feature Tracking | EMNLP 2025 | Multi-layer feature movement analysis |
 | **[Attribution Graphs](https://transformer-circuits.pub/2024/attribution-graphs/index.html)** | Causal Circuits | Anthropic 2025 | Reconstructing multi-step internal computations |
 | **[Mechanist](https://arxiv.org/abs/2608.12036)** | Automated Discovery | arXiv 2026 | AI framework for autonomous mechanistic hypothesis testing |
-| **[From Interpretability to Control](https://arxiv.org/abs/2608.11892)** | Survey / Alignment | arXiv 2026 | Evolution from post-hoc analysis to direct model control |
+| **[From Interpretability to Control](https://arxiv.org/abs/2608.11171)** | Survey / Alignment | arXiv 2026 | Evolution from post-hoc analysis to direct model control |
 | **[MURANO](https://arxiv.org/abs/2608.30662)** | Experimental Tooling | arXiv 2026 | Pipeline framework for reproducible interpretability workflows |
 
 ---
